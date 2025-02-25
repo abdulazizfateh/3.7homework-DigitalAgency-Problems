@@ -1,0 +1,1 @@
+Ustoz masalalarni ushbu yo'nalishda topishingiz mumkin -> src/js/problems.js

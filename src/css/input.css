@@ -22,6 +22,10 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+* {
+    scroll-behavior: smooth;
+}
+
 @theme {
     --color-primary: #272D38;
     --color-secondary: #F6F6F6;

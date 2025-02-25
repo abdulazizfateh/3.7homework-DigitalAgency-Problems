@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: I3;
+    src: url(../assets/fonts/Inter_24pt-Light.ttf), ;
+}
+
+@font-face {
+    font-family: I4;
+    src: url(../assets/fonts/Inter_18pt-Regular.ttf), ;
+}
+
+@font-face {
+    font-family: I6;
+    src: url(../assets/fonts/Inter_18pt-SemiBold.ttf), ;
+}
+
+@font-face {
+    font-family: I7;
+    src: url(../assets/fonts/Inter_18pt-Bold.ttf);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary: #272D38;
+    --color-secondary: #F6F6F6;
+    --color-btn: #8EADD5;
+
+    --color-dark: #000;
+    --color-primary-dark: #d6e4ff;
+    --color-secondary-dark: #1d1d1d;
+    --color-btn-dark: #334459;
+
+    --font-I3: I3;
+    --font-I4: I4;
+    --font-I6: I6;
+    --font-I7: I7;
+}
+
+a {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1097px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.title_big {
+    font-family: var(--font-I7);
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--color-primary);
+    text-transform: capitalize;
+}
+
+.title {
+    font-family: var(--font-I7);
+    font-size: 32px;
+    line-height: 32px;
+    color: var(--color-primary);
+    text-transform: capitalize;
+}
+
+.desc_big {
+    font-family: var(--font-I4);
+    font-size: 16px;
+    line-height: 27.5px;
+    color: var(--color-primary);
+    text-transform: capitalize;
+}
+
+.desc {
+    font-family: var(--font-I4);
+    font-size: 14px;
+    line-height: 27.5px;
+    color: var(--color-primary);
+    text-transform: capitalize;
+}
+
+.btn {
+    min-height: 48.05px;
+    padding: 0 31px;
+    border-radius: 8px;
+    background-color: var(--color-btn);
+    font-family: var(--font-I6);
+    font-size: 14px;
+    line-height: 27.5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 768px) {
+    .title_big {
+        font-size: 54px;
+        line-height: 54px;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .desc_big {
+        font-size: 18px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .title_big {
+        font-size: 64px;
+        line-height: 64px;
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+}
